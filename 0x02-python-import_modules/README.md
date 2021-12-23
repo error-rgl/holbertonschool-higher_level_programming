@@ -25,8 +25,8 @@ The files contained in this repository are:
 | `103-fast_alphabet.py` | Prints the alphabet in uppercase, followed by a new line |
 
 
-[image](https://tenor.com/view/aesthetic-gif-23457392)
+[image](https://tenor.com/view/aesthetic-gif-23457392.gif)
 
 <h1 align ="center">
-<img src="https://tenor.com/view/aesthetic-gif-23457392" height="50%" width="40%">
+<img src="https://tenor.com/view/aesthetic-gif-23457392.gif" height="50%" width="40%">
 </h1>
