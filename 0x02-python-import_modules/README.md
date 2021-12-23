@@ -24,6 +24,16 @@ The files contained in this repository are:
 | `102-magic_calculation.py` | Function that does exactly the same as a given Python bytecode |
 | `103-fast_alphabet.py` | Prints the alphabet in uppercase, followed by a new line |
 
-<div>
-<marquee width="300" scrollamount="300">Error 404</marquee>.
-</div>
+<html>
+<head>
+function blinktext() {
+  var f = document.getElementById('myerror');
+  setInterval(function() {
+    f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
+  }, 1000);
+}
+</head>
+<body onload="blinktext();">
+<p id="myerror">Error 404</p>
+</body>
+</html>
