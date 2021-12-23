@@ -26,12 +26,14 @@ The files contained in this repository are:
 
 <html>
 <head>
+<script>
 function blinktext() {
   var f = document.getElementById('myerror');
   setInterval(function() {
     f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
-  }, 1000);
+  }, 2000);
 }
+</script>
 </head>
 <body onload="blinktext();">
 <p id="myerror">Error 404</p>
