@@ -24,21 +24,6 @@ The files contained in this repository are:
 | `102-magic_calculation.py` | Function that does exactly the same as a given Python bytecode |
 | `103-fast_alphabet.py` | Prints the alphabet in uppercase, followed by a new line |
 
-<html>
-<head>
-<script type="text/javascript">
-function blinktext() {
-  var f = document.getElementById('myerror');
-  setInterval(function() {
-    f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
-  }, 2000);
-}
-</script>
-</head>
-<body onload="blinktext();">
-<p id="myerror">Error 404</p>
-</body>
 
-</html>
+![image](https://tenor.com/view/aesthetic-gif-23457392)
 
-<div class="tenor-gif-embed" data-postid="23457392" data-share-method="host" data-aspect-ratio="1.78771" data-width="100%"><a href="https://tenor.com/view/aesthetic-gif-23457392">Aesthetic GIF</a>from <a href="https://tenor.com/search/aesthetic-gifs">Aesthetic GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
