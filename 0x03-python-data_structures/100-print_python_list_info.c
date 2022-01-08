@@ -10,7 +10,7 @@
 void print_python_list_info(PyObject *p)
 {
 	long int size, i;
-	Pyobject *item;
+	PyObject *item;
 	PyListObject *list;
 
 	size = Py_SIZE(p);
