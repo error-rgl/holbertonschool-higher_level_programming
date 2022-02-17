@@ -18,7 +18,7 @@ class Square:
     def size(self, value):
         """ Method to set the size value of the square object.
         """
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
@@ -32,8 +32,10 @@ class Square:
     def my_print(self):
         """ that prints in stdout the square with the character #.
         """
-        if self.__size == 0:
+        if self.__size > 0:
+            for column in range(self.__size):
+                for row in range(self.__size):
+                    print("#", end="")
+                print()
+        else:
             print()
-            return()
-        for i in range(self.__size):
-            print("#" * self.__size)
