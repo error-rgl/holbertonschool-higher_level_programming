@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-·''' A class that defines a square by its size '''
+''' A class that defines a square by its size '''
 
 
 class Square:
@@ -7,20 +7,6 @@ class Square:
         """ Method to initialize the square object
         """
         self.size = size
-
-    def area(self):
-        """ Method that returns the square are of the object
-        """
-        return(self.__size ** 2)
-
-    def my_print(self):
-        """ that prints in stdout the square with the character #.
-        """
-        if self.__size == 0:
-            print()
-            return()
-        for i in range(self.__size):
-            print("#" * self.__size)
 
     @property
     def size(self):
@@ -37,3 +23,17 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
+    def area(self):
+        """ Method that returns the square are of the object
+        """
+        return(self.__size ** 2)
+
+    def my_print(self):
+        """ that prints in stdout the square with the character #.
+        """
+        if self.__size == 0:
+            print()
+            return()
+        for i in range(self.__size):
+            print("#" * self.__size)
