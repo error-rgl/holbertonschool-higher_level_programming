@@ -29,7 +29,9 @@ This repository contains all of the following files, which are MySQL scripts:
 | `14-average.sql` | Computes the score average of all records in the table `second_table` of the database `hbtn_0c_0` |
 | `15-groups.sql` | Lists the number of records with the same score in the table `second_table` of the database `hbtn_0c_0` |
 | `16-no_link.sql` | Lists all records of the table `second_table` of the database `hbtn_0c_0` |
+| `100-move_to_utf8.sql` | Converts `hbtn_0c_0` database to UTF8 (`utf8mb4`, collate `utf8mb4_unicode_ci`)  |
 | `101-avg_temperatures.sql` | Displays the average temperature (Fahrenheit) by city ordered by temperature (descending) |
+| `102-top_city.sql` | Displays the top 3 of cities temperature during July and August ordered by temperature (descending) |
 | `103-max_state.sql` | Displays the max temperature of each state (ordered by State name) |
 
 <h6 align ="rigth">
