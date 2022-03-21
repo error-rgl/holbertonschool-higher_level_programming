@@ -2,7 +2,8 @@
 """ This module is composed by a class that defines a Rectangle.
 """
 
-Class Rectangle:
+
+class Rectangle:
     """ Class that defines a rectangle.
     """
     number_of_instances = 0

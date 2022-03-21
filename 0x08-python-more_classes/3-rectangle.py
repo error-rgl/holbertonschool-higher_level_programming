@@ -2,7 +2,8 @@
 """ This module is composed by a class that defines a Rectangle.
 """
 
-Class Rectangle:
+
+class Rectangle:
     """ Class that defines a rectangle.
     """
     def __init__(self, width=0, height=0):
