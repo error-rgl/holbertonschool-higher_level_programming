@@ -101,12 +101,12 @@ class Rectangle:
         Retruns:
             string representation of the object.
         """
-        return "Rectangle({:d}, {:d})".format(sel.width, self.height)
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
 
     def __del__(self):
         """ Method that prints a message when the instance is deleted
         """
-        Rectangle.number_of_instance -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
     @staticmethod
