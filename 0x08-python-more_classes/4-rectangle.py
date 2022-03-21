@@ -96,4 +96,4 @@ class Rectangle:
         Retruns:
             string representation of the object.
         """
-        return "Rectangle({:d}, {:d})".format(sel.width, self.height)
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
