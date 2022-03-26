@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""same class or inherit form"""
+
+
 def is_kind_of_class(obj, a_class):
     """ Function that returns True/False if obj is an instance of a_class
     Args:
