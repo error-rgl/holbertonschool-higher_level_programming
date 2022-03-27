@@ -11,8 +11,5 @@ def write_file(filename="", text=""):
     Raises
         Exception: when the file can be opened
     """
-    n_lines = 0
-    with open(filename, 'r', encoding="utf-8") as f:
-        for line in f:
-            n_lines += 1
-    return n_lines
+    with open(filename, 'w', encoding="utf-8") as f:
+        return f.write(text)
