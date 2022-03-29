@@ -11,5 +11,14 @@ def append_write(filename="", text=""):
     Raises
         Exception: when the file can be opened
     """
-    with open(filename, 'a' encoding="utf-8") as f:
-        return(f.write(text))
+    with open(filename, 'r', encoding="utf-8") as f:
+        if text <= 0:
+            read_data = f.read()
+            print(read_data, end='')
+        else:
+            num_line = 0
+            for line in f:
+                print(line, end='')
+                num_line += 1
+                if num_line == text:
+                    break
