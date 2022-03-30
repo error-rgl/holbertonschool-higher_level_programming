@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+""" Use the module for get list of lists of integers
+"""
+
+
 def pascal_triangle(n):
     """ Function that returns the pascal triangle
     Args:
