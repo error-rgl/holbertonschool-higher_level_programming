@@ -3,6 +3,7 @@
     of an object
 """
 
+
 def class_to_json(obj):
     """ Function definition
         Args
