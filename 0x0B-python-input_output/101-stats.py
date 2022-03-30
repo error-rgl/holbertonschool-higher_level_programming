@@ -4,56 +4,53 @@
 
 import sys
 
+size = 0
+lim = 0
+status = {
+    "200": 0,
+    "301": 0,
+    "400": 0,
+    "401": 0,
+    "403": 0,
+    "404": 0,
+    "405": 0,
+    "500": 0
+}
+try:
+    """Get Data(status_code, size)"""
+    for line in sys.stdin:
+        line = line.split()
 
-class Magic:
-    """ Class to generates instances with dict and size"""
-    def __init__(self):
-        """ Init method """
-        self.dic = {}
-        self.size = 0
+        try:
+            size += int(line[-1])
+        except BaseException:
+            pass
 
-    def init_dic(self):
-        """ Initialize dict """
-        self.dic['200'] = 0
-        self.dic['301'] = 0
-        self.dic['400'] = 0
-        self.dic['401'] = 0
-        self.dic['403'] = 0
-        self.dic['404'] = 0
-        self.dic['405'] = 0
-        self.dic['500'] = 0
+        try:
+            """Count status_code"""
+            code = line[-2]
+            if code in list(status.keys()):
+                status[code] += 1
+        except BaseException:
+            pass
 
-    def add_status_code(self, status):
-        """ add repeated number to the status code """
-        if status in self.dic:
-            self.dic[status] += 1
+        lim += 1
 
-    def print_info(self, sig=0, frame=0):
-        """ print status code """
-        print("File size: {:d}".format(self.size))
-        for key in sorted(self.dic.keys()):
-            if self.dic[key] is not 0:
-                print("{}: {:d}".format(key, self.dic[key]))
+        if lim % 10 == 0:
+            """Output format"""
+            print("File size: {:d}".format(size))
+            for key in sorted(status.keys()):
+                if status[key] != 0:
+                    print("{}: {:d}".format(key, status[key]))
 
-
-if __name__ == "__main__":
-    magic = Magic()
-    magic.init_dic()
-    nlines = 0
-
-    try:
-        for line in sys.stdin:
-            if nlines % 10 == 0 and nlines is not 0:
-                magic.print_info()
-
-            try:
-                list_line = [x for x in line.split(" ") if x.strip()]
-                magic.add_status_code(list_line[-2])
-                magic.size += int(list_line[-1].strip("\n"))
-            except BaseException:
-                pass
-            nlines += 1
-    except KeyboardInterrupt:
-        magic.print_info()
-        raise
-    magic.print_info()
+    """Output format"""
+    print("File size: {:d}".format(size))
+    for key in sorted(status.keys()):
+        if status[key] != 0:
+            print("{}: {:d}".format(key, status[key]))
+except KeyboardInterrupt:
+    """Output format"""
+    print("File size: {:d}".format(size))
+    for key in sorted(status.keys()):
+        if status[key] != 0:
+            print("{}: {:d}".format(key, status[key]))
