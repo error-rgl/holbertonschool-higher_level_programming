@@ -13,7 +13,7 @@ if (myArray.length > 1) {
   bigs = Math.max.apply(null, myArray);
   i = myArray.indexOf(bigs);
   myArray[i] = -Infinity;
-  bigs = Math.max.aplly(null, myArray);
+  bigs = Math.max.apply(null, myArray);
 }
 
 console.log(bigs);
