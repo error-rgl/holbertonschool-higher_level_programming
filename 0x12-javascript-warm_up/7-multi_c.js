@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const myNum = parseInt(process.argv[2]);
+let myNum = parseInt(process.argv[2]);
 if (Number.isNaN(myNum)) {
 	console.log('Missing number of occurrences');
 } else {
