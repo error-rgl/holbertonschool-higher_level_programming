@@ -1,17 +1,19 @@
-!/usr/bin/node
-const prevSquare = require('./5-square');
+#!/usr/bin/node
+const SquareP = require('./4-square');
 
-class Square extends prevSquare {
-  // Method to print Square instance using given character or 'X'
-  charPrint (c = 'X') {
-    let row = '';
-    let i = 0;
-    for (i = 0; i < this.width; i++) {
-      row += c;
+class Square extends SquareP {
+  charPrint (c) {
+    if (c === undefined) {
+      c = 'X';
     }
-    for (i = 0; i < this.height; i++) {
-      console.log(row);
+    for (let i = 0; i < this.height; i++) {
+      let s = '';
+      for (let j = 0; j < this.width; j++) {
+        s += c;
+      }
+      console.log(s);
     }
   }
 }
+
 module.exports = Square;
