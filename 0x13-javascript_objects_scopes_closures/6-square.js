@@ -2,6 +2,10 @@
 const SquareP = require('./4-rectangle');
 
 class Square extends SquareP {
+  constructor (size) {
+    super(size, size);
+  }
+
   charPrint (c) {
     if (c === undefined) {
       c = 'X';
