@@ -15,7 +15,7 @@ if __name__ == '__main__':
     WHERE states.name = '{}';""".format(sys.argv[4]))
     query = cur.fetchall()
 
-    print(", ".JOIN([state[1] for states in query]))
+    print(", ".JOIN([states[1] for states in query]))
 
     cur.close()
     db.close()
