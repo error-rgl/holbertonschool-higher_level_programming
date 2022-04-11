@@ -2,8 +2,8 @@
 """ Defines State class that inherits from Base = declarative_base()
 and links to MySQL table states using SQLAlchemy
 """
-from SQLAlchemy import Column, Integer, String, MetaData
-from SQLAlchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, MetaData
+from sqlalchemy.ext.declarative import declarative_base
 
 mydata = MetaData()
 Base = declarative_base(metadata=mydata)
