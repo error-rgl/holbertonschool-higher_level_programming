@@ -1,5 +1,5 @@
-#!/usr/bin/node
-""" Lists all states from the databases hbtn_0e_0_usa
+#!/usr/bin/python3
+"""Lists all states from the databases hbtn_0e_0_usa
 """
 import sys
 import MySQLdb
@@ -15,4 +15,4 @@ if __name__ == '__main__':
         print(states)
 
     cur.close()
-    db.clode()
+    db.close()
