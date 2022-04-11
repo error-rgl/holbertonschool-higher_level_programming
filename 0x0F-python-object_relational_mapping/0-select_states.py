@@ -13,6 +13,3 @@ if __name__ == '__main__':
 
     for states in query:
         print(states)
-
-    cur.close()
-    db.clode()
