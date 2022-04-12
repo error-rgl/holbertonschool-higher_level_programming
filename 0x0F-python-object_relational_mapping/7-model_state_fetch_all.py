@@ -4,8 +4,8 @@ using SQLAlchemy and importing State and Base from model_state
 """
 import sys
 from model_state import Base, State
-from sqlalchemy import create_engine
-from sqlalchemy import sessionmaker
+from sqlalchemy import (create_engine)
+from sqlalchemy.orm import sessionmaker
 
 
 if __name__ = '__main__':
