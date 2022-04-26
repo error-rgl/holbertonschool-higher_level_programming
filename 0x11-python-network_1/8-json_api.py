@@ -14,7 +14,7 @@ if __name__ == "__main__":
         data['q'] = sys.argv[1]
     except Exception:
         pass
-    resp = requests.post('http://0.0.0.0:5000/search_use', data)
+    resp = requests.post('http://0.0.0.0:5000/search_user', data)
 
     try:
         json_o = r resp.json()
