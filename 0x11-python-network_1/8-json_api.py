@@ -17,7 +17,7 @@ if __name__ == "__main__":
     resp = requests.post('http://0.0.0.0:5000/search_user', data)
 
     try:
-        json_o = r resp.json()
+        json_o = resp.json()
         if not json_o:
             print("No result")
         else:
