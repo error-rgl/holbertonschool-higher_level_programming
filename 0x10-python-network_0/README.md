@@ -22,7 +22,7 @@ The files contained in this repository are:
 | `102-catch_me.sh` | Bash script that generates an specific server response|
 
 
-<h6 align ="rigth">
+<h6 align ="rigth" >
 <img src="https://tenor.com/view/aesthetic-gif-23457392.gif" height="8%" width="20%">
 </h6>
  ɹoɹɹǝ-404
