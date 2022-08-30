@@ -19,10 +19,8 @@ The files contained in this repository are:
 | `6-post_email.py` | script that sends a POST request to the passed URL with email as a parameter and finally returns the body of the response |
 | `7-error_code.py` | script that sends a request to the URL and displays: - The body of the response if there are no errors.  - The error code when there is an HTTP error. |
 | `8-json_api.py` | Script that sends a POST request to a URL with a letter as a parameter |
-| `10-my_github.py` | script that takes GitHub credentials
-and uses the GitHub API to display the user id |
-| `100-github_commits.py` | script that shows the last 10 commits of a repository
-in GitHub |
+| `10-my_github.py` | script that takes GitHub credentials and uses the GitHub API to display the user id |
+| `100-github_commits.py` | script that shows the last 10 commits of a repository in GitHub |
 
 
 <h6 align ="rigth">
