@@ -17,9 +17,7 @@ The files contained in this repository are:
 | `4-hbtn_status.py` | script that gets the content of a web page using the `requests` package |
 | `5-hbtn_header.py` | script that sends a request to a passed URL and returns the value of the X-Request-Id variable, in the response header using the packages 'request' and 'sys' |
 | `6-post_email.py` | script that sends a POST request to the passed URL with email as a parameter and finally returns the body of the response |
-| `7-error_code.py` | script that sends a request to the URL and displays:
-- The body of the response if there are no errors
-- The error code when there is an HTTP error. |
+| `7-error_code.py` | script that sends a request to the URL and displays: - The body of the response if there are no errors.  - The error code when there is an HTTP error. |
 | `8-json_api.py` | Script that sends a POST request to a URL with a letter as a parameter |
 | `10-my_github.py` | script that takes GitHub credentials
 and uses the GitHub API to display the user id |
