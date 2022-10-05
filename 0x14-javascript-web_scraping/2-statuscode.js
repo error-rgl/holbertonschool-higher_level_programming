@@ -1,11 +1,11 @@
 #!/usr/bin/node
 // displays the status code of a GET request.
-const request = require('request');
+const axios = require('axios');
 
-const URL = process[2];
-request(URL, function (err, response) {
-  if (err) {
-    console.error(err);
-  }
-  console.log('code:', response.statusCode);
-});
+axios.get(process[2])
+  .then(res => {
+    console.log('code:', res.status);
+  })
+  .catch(err => {
+    console.log('code', err.response.status);
+  });
