@@ -7,5 +7,5 @@ axios.get(process[2])
     console.log('code:', res.status);
   })
   .catch(err => {
-    console.log('code', err.response.status);
+    console.log('code:', err.response.status);
   });
